@@ -1,13 +1,18 @@
 # linux-netutils
 A collection of small Linux networking utilities:
 - nbr
+- owd
 - sit-ctl
 - ssh-door
 - udp-tun
 
 ## nbr
-### Non-blocking resolver
+### Non-blocking resolver.
 It reads domain names from stdin and resolves bunches of them to IP addresses in parallel.
+
+## owd
+### A tool to measure one-way network transmission delay.
+It sends a probe packet to the remote host, which records its arrival time and sends the packet back. To get meaningful results, both local and remote hosts must keep accurate time synchronized with an independent source.
 
 ## sit-ctl
 ### A tool to remotely change the endpoint of a sit tunnel interface.
