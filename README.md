@@ -33,3 +33,6 @@ This program queries a Huawei LTE USB modem (ME909 or similar), and prints out s
 
 ## Usage
 For any questions on command line options, constants, paths etc. refer to the source.
+
+## License
+The programs are in the public domain.
