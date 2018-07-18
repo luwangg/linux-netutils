@@ -6,6 +6,7 @@ A collection of small Linux networking utilities:
 - ssh-door
 - udp-tun
 - lte-rx
+- gpgw
 
 ## nbr
 ### Non-blocking resolver.
@@ -30,6 +31,12 @@ The program creates tunnel interfaces and connects them with UDPv4 packets. Addr
 ## lte-rx
 ### Prints LTE receive signal parameters.
 This program queries a Huawei LTE USB modem (ME909 or similar), and prints out signal strength statistics - RSSI, RSRP, SINR, and RSRQ - in a human-readable form.
+
+## gpgw
+### A web interface to GPG decryption.
+This is a WSGI application which asks for a name of an encrypted file
+and for a passphrase, and then displays the decrypted contents of that
+file.
 
 ## Usage
 For any questions on command line options, constants, paths etc. refer to the source.
