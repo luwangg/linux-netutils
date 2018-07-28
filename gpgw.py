@@ -3,7 +3,7 @@ A web interface to GPG decryption
 """
 
 from urllib.parse import parse_qs
-import subprocess
+from subprocess import check_output,DEVNULL,CalledProcessError
 
 # Main entry point
 def application(environ,start_response):
@@ -58,12 +58,12 @@ def decr(environ):
 		f = q['f'][0]
 		pp = q['pp'][0]
 		cmd = ["gpg1","--batch","--passphrase-fd","0","-d",f]
-		r = subprocess.check_output(cmd,input=pp,universal_newlines=True)
+		r = check_output(cmd,input=pp.encode("utf-8"),stderr=DEVNULL)
 	except KeyError:
 		raise ValueError("Missing parameter")
-	except subprocess.CalledProcessError:
+	except CalledProcessError:
 		raise ValueError("gpg failed")
 	# Return success
 	c = "200 OK"
-	h = [("Content-type","text/plain")]
-	return c,h,r
+	h = [("Content-type","text/plain; charset=utf-8")]
+	return c,h,r.decode("utf-8")
