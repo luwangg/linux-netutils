@@ -1,3 +1,9 @@
+/*
+	SSH door
+	Copyright (c) 2018 Alexander Mukhin
+	MIT License
+*/
+
 #include <stdlib.h>
 #include <ctype.h>
 #include <stdio.h>

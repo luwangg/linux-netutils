@@ -1,5 +1,7 @@
 """
 A web interface to GPG decryption
+Copyright (c) 2018 Alexander Mukhin
+MIT License
 """
 
 from urllib.parse import parse_qs

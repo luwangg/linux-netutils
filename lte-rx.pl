@@ -1,5 +1,9 @@
 #!/usr/bin/perl
 
+# LTE statistics parser
+# Copyright (c) 2018 Alexander Mukhin
+# MIT License
+
 $TTY="/dev/ttyUSB.LTE-MON";
 $ORIG_STTY=`stty -F $TTY -g`;
 `stty -F $TTY -icrnl -ixon -echo`;

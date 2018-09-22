@@ -1,3 +1,9 @@
+/*
+	SIT tunnel endpoint changer
+	Copyright (c) 2018 Alexander Mukhin
+	MIT License
+*/
+
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <sys/ioctl.h>

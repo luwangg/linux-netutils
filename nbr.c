@@ -1,6 +1,8 @@
 /*
- * Non-blocking resolver.
- */
+	Non-blocking resolver
+	Copyright (c) 2018 Alexander Mukhin
+	MIT License
+*/
 
 #define NAMESERV "8.8.8.8"
 #define DNAMSZ 256	// maximum domain name length

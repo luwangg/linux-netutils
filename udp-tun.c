@@ -1,3 +1,9 @@
+/*
+	UDP tunnel
+	Copyright (c) 2018 Alexander Mukhin
+	MIT License
+*/
+
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
